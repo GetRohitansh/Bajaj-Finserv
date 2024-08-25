@@ -23,7 +23,7 @@ function App() {
     e.preventDefault();
     try {
       const parsedInput = JSON.parse(jsonInput);
-      const { data } = await axios.post('http://localhost:5000/bfhl', parsedInput);
+      const { data } = await axios.post('https://bajaj-finserv-backend-fcqa.onrender.com/bfhl', parsedInput);
       setResponse(data);
       setError('');
     } catch (err) {
